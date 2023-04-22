@@ -144,7 +144,6 @@ def get_text_message(message):
         bot.send_message(message.chat.id, '📲 Здесь можно прочитать полную биографию данного поэта...',
                          reply_markup=board)
 
-
     elif message.text == 'Рати Саксена':
         photo = open('photo/Рати фото IMG-20220108-WA0025 (1).jpg', 'rb')
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -168,7 +167,7 @@ def get_text_message(message):
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
         board = types.InlineKeyboardMarkup(row_width=1)
         link = types.InlineKeyboardButton(text='🎯 Подробнее...',
-                                          url='https://ru.wikipedia.org/wiki/Терёхин,_Вадим_Фёдорович')
+                                          url='https://es.wikipedia.org/wiki/Fernando_Rend%C3%B3n')
         board.add(link)
         btn1 = types.KeyboardButton(text='🔙 Главное меню')
         keyboard.add(btn1)
@@ -348,7 +347,7 @@ def get_text_message(message):
         photo = open('photo/Фернандо Рендон!.jpg', 'rb')
         board = types.InlineKeyboardMarkup(row_width=1)
         link = types.InlineKeyboardButton(text='🎯 More detailed...',
-                                          url='https://ru.wikipedia.org/wiki/Терёхин,_Вадим_Фёдорович')
+                                          url='https://es.wikipedia.org/wiki/Fernando_Rend%C3%B3n')
         board.add(link)
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton(text='🔙 Main menu')
@@ -526,7 +525,7 @@ def get_text_message(message):
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
         board = types.InlineKeyboardMarkup(row_width=1)
         link = types.InlineKeyboardButton(text='🎯 Detallado...',
-                                          url='https://ru.wikipedia.org/wiki/Терёхин,_Вадим_Фёдорович')
+                                          url='https://es.wikipedia.org/wiki/Fernando_Rend%C3%B3n')
         board.add(link)
         btn1 = types.KeyboardButton(text='🔙 Menú principal')
         keyboard.add(btn1)
